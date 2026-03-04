@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excluir Conta – Isis Pole Dance</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F7F3FF;
+      color: #1F2937;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #5B21B6 0%, #8B5CF6 60%, #EC4899 100%);
+      padding: 48px 24px 40px;
+      text-align: center;
+      color: white;
+    }
+
+    header .logo-circle {
+      width: 72px;
+      height: 72px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 32px;
+    }
+
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p { margin-top: 8px; font-size: 14px; opacity: 0.82; }
+
+    .badge {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 5px 14px;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(139,92,246,0.08), 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #7C3AED;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .num {
+      background: linear-gradient(135deg, #8B5CF6, #EC4899);
+      color: white;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #EDE9FE;
+    }
+
+    .step:last-child { border-bottom: none; padding-bottom: 0; }
+    .step:first-child { padding-top: 0; }
+
+    .step-num {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #8B5CF6, #EC4899);
+      border-radius: 50%;
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-text strong {
+      display: block;
+      font-size: 15px;
+      color: #1F2937;
+      margin-bottom: 3px;
+    }
+
+    .step-text span {
+      font-size: 13.5px;
+      color: #6B7280;
+    }
+
+    .warning-card {
+      background: #FFF7ED;
+      border: 1px solid #FED7AA;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+
+    .warning-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #92400E;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .warning-card ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .warning-card ul li {
+      font-size: 14px;
+      color: #78350F;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    .warning-card ul li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: #F97316;
+      font-weight: 700;
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, #5B21B6 0%, #8B5CF6 60%, #EC4899 100%);
+      border-radius: 16px;
+      padding: 28px;
+      color: white;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .contact-card h2 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .contact-card p { font-size: 14px; opacity: 0.85; margin-bottom: 16px; }
+
+    .contact-card a {
+      display: inline-block;
+      background: white;
+      color: #7C3AED;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #9CA3AF;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-circle">🎀</div>
+  <h1>Isis Pole Dance</h1>
+  <p>Exclusão de Conta e Dados</p>
+  <div class="badge">GERENCIAR CONTA</div>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2><span class="num">1</span> Como excluir sua conta pelo app</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">
+        <strong>Abra o aplicativo</strong>
+        <span>Faça login na sua conta normalmente</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        <strong>Acesse seu Perfil</strong>
+        <span>Toque no ícone de perfil no canto superior direito da tela inicial</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">
+        <strong>Role até o final da página</strong>
+        <span>Desça até encontrar o botão vermelho "Excluir minha conta"</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text">
+        <strong>Confirme a exclusão</strong>
+        <span>Leia o aviso, confirme com sua senha e clique em "Excluir minha conta"</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-text">
+        <strong>Conta excluída</strong>
+        <span>Você será desconectada e sua conta será removida permanentemente</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="warning-card">
+    <h3>⚠️ O que acontece ao excluir sua conta</h3>
+    <ul>
+      <li>Seus dados pessoais (nome, e-mail, aniversário) serão removidos</li>
+      <li>Seu histórico de aulas e check-ins será apagado</li>
+      <li>Suas fotos de movimentos cadastradas serão excluídas</li>
+      <li>Sua matrícula será cancelada</li>
+      <li>Essa ação é <strong>permanente e não pode ser desfeita</strong></li>
+      <li>Os dados são removidos em até 30 dias após a solicitação</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="num">2</span> Não consegue acessar o app?</h2>
+    <p style="font-size: 14.5px; color: #374151;">
+      Se não conseguir acessar sua conta para excluí-la, entre em contato pelo e-mail
+      abaixo informando o endereço de e-mail cadastrado. Processaremos sua solicitação
+      em até <strong>30 dias</strong>.
+    </p>
+  </div>
+
+  <div class="contact-card">
+    <h2>Solicitar exclusão por e-mail</h2>
+    <p>Envie sua solicitação para o nosso suporte:</p>
+    <a href="mailto:visionautomacaor@gmail.com">visionautomacaor@gmail.com</a>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 Isis Pole Dance · Todos os direitos reservados
+</footer>
+
+</body>
+</html>
